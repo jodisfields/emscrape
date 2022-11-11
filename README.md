@@ -28,7 +28,7 @@ python emscrape.py
 
 ## Mac / Linux
 
-I have NOT personally tested this on a Mac however as it is a Unix based operating system at its core I dont expect any issues. So if you're on a Mac press `Command` + `Space Bar`, type in `Terminal` and then click on application. Once you have the terminal open, copy and paste the following commands to get up and running.
+I have NOT personally tested this on a Mac however as it is a Unix based operating system at its core I dont expect any issues. So if you're on a Mac press `Command` + `Space Bar`, type in `Terminal` and then open the application. Once you have the terminal open, copy and paste the following commands to get up and running.
 
 > Note: You may need to close and reopen your terminal after installing miniconda.<br>Note: When the installer asks if you wish to initialize Miniconda3 **select yes**.
 
