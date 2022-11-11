@@ -2,6 +2,8 @@
 
 **Web scraping utility designed for max scrape, min hassle**
 
+https://user-images.githubusercontent.com/46502355/201368804-85b69446-f18e-4590-a688-2fc5c323cec4.mp4
+
 ## Getting Started
 
 There are a number of ways you can install Python on your machine, the below is my personal preference but feel free to install Python on your machine in any manner you prefer.
