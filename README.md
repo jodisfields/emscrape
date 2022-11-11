@@ -1,8 +1,6 @@
-# Emscrape
+<h1 align="center"><u>Emscrape</u></h1>
 
-**Web scraping utility designed for max scrape, min hassle**
-
-https://user-images.githubusercontent.com/46502355/201368804-85b69446-f18e-4590-a688-2fc5c323cec4.mp4
+<p align ="center"><b>Web scraping utility designed for max scrape, min hassle</b></p>
 
 ## Getting Started
 
@@ -47,3 +45,5 @@ pip install -r requirements.txt
 conda activate emscrape
 python emscrape.py
 ```
+
+https://user-images.githubusercontent.com/46502355/201368804-85b69446-f18e-4590-a688-2fc5c323cec4.mp4
