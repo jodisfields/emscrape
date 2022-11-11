@@ -8,11 +8,13 @@
 
 ## Getting Started
 
-There are a number of ways you can install Python on your machine, the below is my personal preference so feel free to install Python on your machine in any manner you prefer. Open a terminal and type in the following commands to install Python on your machine.
-
-> Note: You may need to close and reopen your terminal after installing miniconda to ensure that the conda command is available.
+There are a number of ways you can install Python on your machine, the below is my personal preference but feel free to install Python on your machine in any manner you prefer.
 
 ### Windows
+
+Use the keyboard shortcut `WIN` + `X` followed by `I` to open powershell and run the following commands.
+
+> Note: You may need to close and reopen your terminal after installing miniconda.
 
 ```sh
 cd ~/Downloads/
@@ -27,7 +29,9 @@ pip install -r requirements.txt
 
 ### Mac
 
-> Note: The installer prompts “Do you wish the installer to initialize Miniconda3 by running conda init?” Make sure you select **yes**.
+I havent tested this on an actual Mac, but it should work the same as a Linux machine as they are both Unix based. So if you're on a Mac, open the terminal application and run the following commands.
+
+> Note: When the installer asks if you wish to initialize Miniconda3 **select yes**.
 
 ```sh
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
@@ -42,5 +46,6 @@ pip install -r requirements.txt
 ## Usage
 
 ```sh
+conda activate emscrape
 python emscrape.py
 ```
