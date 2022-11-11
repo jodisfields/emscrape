@@ -1,10 +1,6 @@
-<center>
-
 # Emscrape
 
 **Web scraping utility designed for max scrape, min hassle**
-
-</center>
 
 ## Getting Started
 
