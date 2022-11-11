@@ -1,16 +1,18 @@
-<h1 align="center"><u>Emscrape</u></h1>
+<h1 align="center">Emscrape</h1>
 
-<p align ="center"><b>Web scraping utility designed for max scrape, min hassle</b></p>
+<p align ="center"><b>Web scraping utility designed for max scrape, min hassle!</b></p>
+
+---
 
 ## Getting Started
 
-There are a number of ways you can install Python on your machine, the below is my personal preference but feel free to install Python on your machine in any manner you prefer.
+The only prerequisite is a working installation of Python so feel free to skip the below steps if you already have Python installed on your system. There are a number of ways you can install Python, the below is my personal preference but of course feel free to install Python on your machine in any manner you prefer.
 
-### Windows
+## Windows
 
-Use the keyboard shortcut `WIN` + `X` followed by `I` to open powershell and run the following commands.
+Use the keyboard shortcut `WIN` + `X` followed by `I` to open powershell then copy and paste the following commands to get up and running.
 
-> Note: You may need to close and reopen your terminal after installing miniconda.
+> Note: You may need to close and reopen your terminal after installing miniconda.<br>Note: When the installer asks if you wish to initialize Miniconda3 **select yes**.
 
 ```sh
 cd ~/Downloads/
@@ -21,13 +23,14 @@ conda activate emscrape
 git clone https://github.com/jodisfields/emscrape.git
 cd emscrape
 pip install -r requirements.txt
+python emscrape.py
 ```
 
-### Mac
+## Mac / Linux
 
-I havent tested this on an actual Mac, but it should work the same as a Linux machine as they are both Unix based. So if you're on a Mac, open the terminal application and run the following commands.
+I have NOT personally tested this on a Mac however as it is a Unix based operating system at its core I dont expect any issues. So if you're on a Mac press `Command` + `Space Bar`, type in `Terminal` and then click on application. Once you have the terminal open, copy and paste the following commands to get up and running.
 
-> Note: When the installer asks if you wish to initialize Miniconda3 **select yes**.
+> Note: You may need to close and reopen your terminal after installing miniconda.<br>Note: When the installer asks if you wish to initialize Miniconda3 **select yes**.
 
 ```sh
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O ~/miniconda.sh
@@ -37,13 +40,9 @@ conda activate emscrape
 git clone https://github.com/jodisfields/emscrape.git
 cd emscrape
 pip install -r requirements.txt
+python emscrape.py
 ```
 
 ## Usage
-
-```sh
-conda activate emscrape
-python emscrape.py
-```
 
 https://user-images.githubusercontent.com/46502355/201368804-85b69446-f18e-4590-a688-2fc5c323cec4.mp4
