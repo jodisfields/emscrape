@@ -1,9 +1,11 @@
 import csv
 import json
 import sys
+from getpass import getpass
 
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 # Create CSV
 header = ["company", "industry", "URL"]
@@ -19,18 +21,21 @@ elif sys.platform.startswith("darwin"):
 elif sys.platform.startswith("win32"):
     driver = webdriver.Chrome("drivers/win32_chromedriver.exe")
 
+Options = Options()
+Options.headless = True
+
 # Open linkedin
 driver.get("https://linkedin.com/uas/login")
 
 # Find username field and prompt for input
 username = driver.find_element_by_id("username")
 # username.send_keys(input("Enter your username: "))
-username.send_keys("jodis.fields@outlook.com")
+username.send_keys(input("Enter your username: "))
 
 # Find password field and prompt for input
 pword = driver.find_element_by_id("password")
 # pword.send_keys(getpass("Enter your password: "))
-pword.send_keys("12skipAfew99100!")
+pword.send_keys(getpass("Enter your password: "))
 
 # Log in
 driver.find_element_by_xpath("//button[@type='submit']").click()
