@@ -94,6 +94,8 @@ The only prerequisite is a working installation of Python so feel free to skip t
 
 ### Windows
 
+I have compiled the code into a native windows executable so you can simply run download this code by clicking [this link](https://github.com/jodisfields/emscrape/archive/refs/heads/main.zip) and then running the `Emscrape.exe` executable. However, If you would like to run the code from source then you will need to install Python on your machine. You can do this by following the steps below.
+
 Use the keyboard shortcut `WIN` + `X` followed by `I` to open powershell then copy and paste the following commands to get up and running.
 
 > Note: You may need to close and reopen your terminal after installing miniconda.<br>Note: When the installer asks if you wish to initialize Miniconda3 **select yes**.
