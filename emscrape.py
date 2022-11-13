@@ -6,12 +6,17 @@ from getpass import getpass
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 
 # Create CSV
-header = ["company", "industry", "URL"]
-with open("industry.csv", "a+", newline="", encoding="UTF8") as industry_csv:
-    writer = csv.writer(industry_csv)
-    writer.writerow(header)
+csv_file = "industry.csv"
+if os.path.exists(csv_file):
+    print("File already exists")
+else:
+    header = ["company", "industry", "URL"]
+    with open("industry.csv", "a+", newline="", encoding="UTF8") as industry_csv:
+        writer = csv.writer(industry_csv)
+        writer.writerow(header)
 
 # Make window headless
 Options = Options()
@@ -26,34 +31,32 @@ elif sys.platform.startswith("darwin"):
 elif sys.platform.startswith("win32"):
     driver = webdriver.Chrome("drivers/win32_chromedriver.exe", options=Options)
 
+
 # Open linkedin
 driver.get("https://linkedin.com/uas/login")
 
 # Find username field and prompt for input
-username = driver.find_element_by_id("username")
+username = driver.find_element(by=By.ID, value="username")
 if sys.platform.startswith("linux"):
     os.system('clear')
 elif sys.platform.startswith("darwin"):
     os.system('clear')
 elif sys.platform.startswith("win32"):
     os.system('cls')
-
-# username.send_keys(input("Enter your username: "))
 username.send_keys(input("Enter your username: "))
 
 # Find password field and prompt for input
-pword = driver.find_element_by_id("password")
+pword = driver.find_element(by=By.ID, value="password")
 if sys.platform.startswith("linux"):
     os.system('clear')
 elif sys.platform.startswith("darwin"):
     os.system('clear')
 elif sys.platform.startswith("win32"):
     os.system('cls')
-# pword.send_keys(getpass("Enter your password: "))
 pword.send_keys(getpass("Enter your password: "))
 
 # Log in
-driver.find_element_by_xpath("//button[@type='submit']").click()
+driver.find_element(by=By.XPATH, value="//button[@type='submit']").click()
 if sys.platform.startswith("linux"):
     os.system('clear')
 elif sys.platform.startswith("darwin"):
