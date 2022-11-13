@@ -1,5 +1,4 @@
 import csv
-import json
 import os
 import sys
 from getpass import getpass
@@ -63,15 +62,13 @@ elif sys.platform.startswith("win32"):
     os.system('cls')
 
 # Read mock customer data from file (replace with real customer data later)
-with open("customer_db.json", "r") as customer_db:
-    mock_data = json.load(customer_db)
-
-    # Loop through the mock data to get company name and email
+with open("customer_db.csv", "r") as customer_db:
+    customer_data = csv.reader(customer_db)
     print("Fetching Results...")
-    for customer in mock_data:
-        company = customer["company"]
-        email = customer["email"]
-        name = customer["name"]
+    for row in customer_data:
+        name = row[1]
+        email = row[2]
+        company = row[3]
 
         # Create search query for each customers company
         query_url = f"https://www.linkedin.com/company/{company}/about/"
