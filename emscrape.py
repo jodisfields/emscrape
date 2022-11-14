@@ -75,6 +75,7 @@ with open("customer_db.csv", "r") as customer_db:
 
         # Create search query for each customers company
         query_url = f"https://www.linkedin.com/company/{company}/about/"
+        query_url = query_url.replace(" ", "%20")
 
         # Fetch the industry of each company from linkedin
         driver.get(query_url)
